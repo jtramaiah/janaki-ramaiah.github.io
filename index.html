@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janakiram | Kernel Developer</title>
+  <link rel="stylesheet" href="css/terminal.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+  <div id="scanlines"></div>
+
+  <!-- Boot Sequence Overlay -->
+  <div id="boot-screen">
+    <div id="boot-log"></div>
+    <div id="boot-cursor">█</div>
+  </div>
+
+  <!-- Main Terminal Container -->
+  <div id="terminal" class="hidden">
+    <header id="terminal-header">
+      <div class="header-dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="header-title">janakiram@kernel-dev ~ $</div>
+      <div class="header-info">TTY1 | 80x24</div>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="terminal-nav">
+      <span class="prompt">root@portfolio:~$</span>
+      <span class="nav-hint">navigate: </span>
+      <button class="nav-cmd active" data-section="about">./about</button>
+      <button class="nav-cmd" data-section="experience">./experience</button>
+      <button class="nav-cmd" data-section="skills">./skills</button>
+      <button class="nav-cmd" data-section="projects">./projects</button>
+      <button class="nav-cmd" data-section="blog">./blog</button>
+    </nav>
+
+    <!-- Terminal Output Area -->
+    <main id="terminal-body">
+      <div id="section-about" class="section active"></div>
+      <div id="section-experience" class="section hidden"></div>
+      <div id="section-skills" class="section hidden"></div>
+      <div id="section-projects" class="section hidden"></div>
+      <div id="section-blog" class="section hidden"></div>
+    </main>
+
+    <!-- Persistent Command Line -->
+    <footer id="terminal-footer">
+      <span class="prompt">janakiram@kernel-dev:~$</span>
+      <input type="text" id="cmd-input" placeholder="type 'help' for commands..." autocomplete="off" spellcheck="false" />
+      <span id="input-cursor">█</span>
+    </footer>
+  </div>
+
+  <script src="js/boot.js"></script>
+  <script src="js/sections.js"></script>
+  <script src="js/terminal.js"></script>
+</body>
+</html>
