@@ -33,7 +33,7 @@
         <div><span class="help-cmd">experience</span><span class="help-sep">──</span><span class="help-desc">work history</span></div>
         <div><span class="help-cmd">skills</span><span class="help-sep">──</span><span class="help-desc">tech stack &amp; proficiencies</span></div>
         <div><span class="help-cmd">projects</span><span class="help-sep">──</span><span class="help-desc">open-source work</span></div>
-        <div><span class="help-cmd">blog</span><span class="help-sep">──</span><span class="help-desc">articles &amp; write-ups</span></div>
+        <div><span class="help-cmd">articles</span><span class="help-sep">──</span><span class="help-desc">articles &amp; write-ups</span></div>
         <div><span class="help-cmd">whoami</span><span class="help-sep">──</span><span class="help-desc">print user info</span></div>
         <div><span class="help-cmd">uname -a</span><span class="help-sep">──</span><span class="help-desc">system info</span></div>
         <div><span class="help-cmd">clear</span><span class="help-sep">──</span><span class="help-desc">clear the terminal</span></div>
@@ -42,7 +42,7 @@
       </div>`,
     whoami: () => '<div class="cmd-response">janakiram — Embedded Linux &amp; Kernel Developer, Hyderabad, India</div>',
     'uname -a': () => '<div class="cmd-response">Linux kernel-dev 6.6.21-rt26 #1 SMP PREEMPT_DYNAMIC Thu Jun 5 2026 armv7l GNU/Linux</div>',
-    ls: () => '<div class="cmd-response">about/&nbsp;&nbsp; experience/&nbsp;&nbsp; skills/&nbsp;&nbsp; projects/&nbsp;&nbsp; blog/&nbsp;&nbsp; contact.txt</div>',
+    ls: () => '<div class="cmd-response">about/&nbsp;&nbsp; experience/&nbsp;&nbsp; skills/&nbsp;&nbsp; projects/&nbsp;&nbsp; articles/&nbsp;&nbsp; contact.txt</div>',
     'cat contact.txt': () => `
       <div class="cmd-response">
         email   : you@example.com<br>
@@ -57,7 +57,7 @@
   };
 
   // Nav sections also work as commands
-  ['about','experience','skills','projects','blog'].forEach(s => {
+  ['about','experience','skills','projects','articles'].forEach(s => {
     COMMANDS[s] = () => { showSection(s); return null; };
     COMMANDS['./' + s] = COMMANDS[s];
     COMMANDS['cd ' + s] = COMMANDS[s];

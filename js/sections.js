@@ -227,9 +227,9 @@ window.SECTIONS = {
     </div>
   `,
 
-  blog: `
-    <p class="cmd-echo">ls -lt ~/blog/ | head -10</p>
-    <h2 class="sec-title">BLOG / ARTICLES</h2>
+  articles: `
+    <p class="cmd-echo">ls -lt ~/articles/ | head -10</p>
+    <h2 class="sec-title">ARTICLES / NOTES</h2>
     <hr class="sec-divider">
     <div class="blog-list">
 
@@ -239,6 +239,10 @@ window.SECTIONS = {
           <div class="blog-title">Understanding the Linux process lifecycle: fork → execve → ELF → CRT</div>
           <div class="blog-excerpt">A deep dive into what actually happens from the moment a shell forks until your main() runs — covering copy_process(), do_execve(), ELF loader, and dynamic linker internals.</div>
           <div class="blog-tags-row"><span class="tag">kernel</span><span class="tag">process</span><span class="tag">ELF</span><span class="tag">ARM32</span></div>
+          <div class="note-links">
+            <a href="viewer.html?file=notes/process-lifecycle.md" target="_blank">→ read note (.md)</a>
+            <a href="notes/process-lifecycle.pdf" target="_blank">→ PDF</a>
+          </div>
         </div>
       </div>
 
@@ -248,6 +252,9 @@ window.SECTIONS = {
           <div class="blog-title">Building crash utility for ARM vmcore analysis on x86-64</div>
           <div class="blog-excerpt">Step-by-step walkthrough of building crash v9.0.2 + GDB 16.2 with target=ARM on Ubuntu 24.04 — resolving multilib, i386 GMP/MPFR, and GDB configure quirks along the way.</div>
           <div class="blog-tags-row"><span class="tag">crash</span><span class="tag">vmcore</span><span class="tag">GDB</span></div>
+          <div class="note-links">
+            <a href="viewer.html?file=notes/crash-arm32.md" target="_blank">→ read note (.md)</a>
+          </div>
         </div>
       </div>
 
@@ -257,6 +264,10 @@ window.SECTIONS = {
           <div class="blog-title">End-to-end kdump on BeagleBone Black: the complete guide</div>
           <div class="blog-excerpt">Everything from kernel config and U-Boot crashkernel= through static kexec-tools cross-compilation, capture kernel pitfalls, and post-panic vmcore extraction.</div>
           <div class="blog-tags-row"><span class="tag">kdump</span><span class="tag">BBB</span><span class="tag">Buildroot</span><span class="tag">kexec</span></div>
+          <div class="note-links">
+            <a href="viewer.html?file=notes/kdump-pipeline.md" target="_blank">→ read note (.md)</a>
+            <a href="notes/kdump-pipeline.pdf" target="_blank">→ PDF</a>
+          </div>
         </div>
       </div>
 
@@ -266,6 +277,9 @@ window.SECTIONS = {
           <div class="blog-title">Linux memory management internals for embedded developers</div>
           <div class="blog-excerpt">Page allocator, slab/slub, vmalloc zones, and CMA on a 512MB Cortex-A8 — with practical crash utility commands to inspect each layer in a live vmcore.</div>
           <div class="blog-tags-row"><span class="tag">mm</span><span class="tag">slab</span><span class="tag">ARM</span><span class="tag">crash</span></div>
+          <div class="note-links">
+            <a href="viewer.html?file=notes/kernel-memory.md" target="_blank">→ read note (.md)</a>
+          </div>
         </div>
       </div>
 
@@ -275,6 +289,9 @@ window.SECTIONS = {
           <div class="blog-title">Magic SysRq demystified: kernel bypass from userspace to hardware</div>
           <div class="blog-excerpt">How echo c &gt; /proc/sysrq-trigger actually triggers a panic, why it can fail on embedded boards, and when to use physical keyboard bypass instead.</div>
           <div class="blog-tags-row"><span class="tag">sysrq</span><span class="tag">kernel</span><span class="tag">debug</span></div>
+          <div class="note-links">
+            <a href="viewer.html?file=notes/sysrq-notes.md" target="_blank">→ read note (.md)</a>
+          </div>
         </div>
       </div>
 
