@@ -4,40 +4,36 @@ window.SECTIONS = {
 
   about: `
     <p class="cmd-echo">cat about.txt</p>
-    <h2 class="sec-title">JANAKIRAM</h2>
+    <h2 class="sec-title">JANAKI RAMAIAH THOTA</h2>
     <hr class="sec-divider">
     <div class="about-grid">
       <div class="about-meta">
-        <div class="meta-line"><span class="key">name     :</span> Janakiram</div>
-        <div class="meta-line"><span class="key">role     :</span> Embedded Linux &amp; Kernel Driver Developer</div>
-        <div class="meta-line"><span class="key">hardware :</span> BeagleBone Black (TI AM335x Cortex-A8)</div>
-        <div class="meta-line"><span class="key">host     :</span> x86-64 Ubuntu 24.04 / Mac Mini M4</div>
-        <div class="meta-line"><span class="key">focus    :</span> Kernel internals, kdump/kexec, vmcore analysis</div>
-        <div class="meta-line"><span class="key">location :</span> Hyderabad, India</div>
-        <div class="meta-line"><span class="key">email    :</span> <a href="mailto:you@example.com">you@example.com</a></div>
-        <div class="meta-line"><span class="key">github   :</span> <a href="https://github.com/" target="_blank">github.com/yourhandle</a></div>
-        <div class="meta-line"><span class="key">linkedin :</span> <a href="https://linkedin.com/in/" target="_blank">linkedin.com/in/yourhandle</a></div>
+        <div class="meta-line"><span class="key">name      :</span> Janaki Ramaiah Thota</div>
+        <div class="meta-line"><span class="key">role      :</span> Lead Engineer &middot; Embedded Firmware &amp; Device Drivers</div>
+        <div class="meta-line"><span class="key">exp       :</span> 10+ yrs &mdash; Bluetooth / UWB firmware, on/off-chip peripheral drivers</div>
+        <div class="meta-line"><span class="key">stack     :</span> Embedded C &middot; I²C / SPI / UART &middot; Qualcomm QCC / WCN</div>
+        <div class="meta-line"><span class="key">interests :</span> Linux kernel internals &amp; debugging</div>
+        <div class="meta-line"><span class="key">location  :</span> Hyderabad, India</div>
+        <div class="meta-line"><span class="key">email     :</span> <a href="mailto:jt.ramaiah@gmail.com">jt.ramaiah@gmail.com</a></div>
+        <div class="meta-line"><span class="key">github    :</span> <a href="https://github.com/janaki-ramaiah-thota" target="_blank">github.com/janaki-ramaiah-thota</a></div>
+        <div class="meta-line"><span class="key">linkedin  :</span> <a href="https://linkedin.com/in/thota-janaki-ramaiah" target="_blank">linkedin.com/in/thota-janaki-ramaiah</a></div>
       </div>
       <div class="about-ascii">
-  ____  ____  ____
- ||J ||||A ||||N ||
- ||__||||__||||__||
- |/__\\||/__\\||/__\\|
-  __ _  _ __
- | || || || |
- | || || || |
- |_||_||_||_|
+ ╔═══════════════╗
+ ║   J · R · T   ║
+ ║  firmware-dev ║
+ ╚═══════════════╝
       </div>
     </div>
     <p class="about-bio">
-      Experienced embedded Linux and kernel driver developer specialising in
-      the TI AM335x / ARMv7 ecosystem. Deep focus on kernel debugging
-      infrastructure: kdump / kexec pipelines, vmcore analysis with the crash
-      utility and gdb-multiarch, Buildroot-based cross-compilation, and
-      low-level ARM architecture internals. Passionate about understanding
-      Linux at the source-code level — process lifecycle, memory management,
-      scheduler internals — and equally passionate about teaching those
-      concepts clearly.
+      Embedded software engineer with 10+ years building firmware and device
+      drivers across Qualcomm Bluetooth / UWB chipsets and microcontroller
+      platforms — from sports earbuds and headsets to host-side Linux
+      bring-up. Currently a Lead Engineer on Qualcomm platforms at ThunderSoft.
+      I like working close to the hardware, owning features end to end, and
+      digging into Linux at the source level — process lifecycle, memory
+      management, and the scheduler. Understanding systems deeply, and
+      teaching what I learn, is the part I enjoy most.
     </p>
   `,
 
@@ -49,43 +45,42 @@ window.SECTIONS = {
 
       <div class="exp-item">
         <div class="exp-header">
-          <span class="exp-role">Senior Embedded Linux Engineer</span>
-          <span class="exp-period">2021 — present</span>
+          <span class="exp-role">Lead Engineer</span>
+          <span class="exp-period">Feb 2022 — present</span>
         </div>
-        <div class="exp-company">YourCompany · Hyderabad, India</div>
+        <div class="exp-company">ThunderSoft India Pvt Ltd · Client: Qualcomm · Hyderabad, India</div>
         <ul class="exp-desc">
-          <li>Developed and maintained kernel drivers for TI AM335x/AM57xx platforms</li>
-          <li>Built end-to-end kdump pipelines: kexec-tools, makedumpfile, crash kernel tuning</li>
-          <li>Automated vmcore triage workflows using crash utility + gdb-multiarch on x86-64</li>
-          <li>Maintained Buildroot-based BSPs (2024.x – 2026.x), resolving cross-compilation dependency chains</li>
-          <li>Diagnosed production panics by analysing vmcore symbols, call stacks, and slab state</li>
+          <li>Built a unified interface synchronising SoC access for the Bluetooth and UWB host subsystems (HALs)</li>
+          <li>Brought up the WCN6750 Bluetooth device over UART on a new Qualcomm Linux platform</li>
+          <li>Developed <code>nvmtool</code> to update the BD_ADDR tag in the firmware NVM binary, plus a systemd service that assigns a unique BD address at boot</li>
+          <li>Upstreamed the platform changes into the mainline Linux kernel</li>
+          <li>Built real-time load generation and DMIPS benchmarking (stress-ng, FFT) to validate a critical performance use case</li>
         </ul>
       </div>
 
       <div class="exp-item">
         <div class="exp-header">
-          <span class="exp-role">Embedded Linux Developer</span>
-          <span class="exp-period">2018 — 2021</span>
+          <span class="exp-role">Senior Software Engineer</span>
+          <span class="exp-period">Jul 2018 — Jan 2022</span>
         </div>
-        <div class="exp-company">PreviousCompany · Hyderabad, India</div>
+        <div class="exp-company">Global Edge Software Ltd (Capgemini) · Clients: Qualcomm, Logitech · Hyderabad, India</div>
         <ul class="exp-desc">
-          <li>Wrote character and platform drivers for I²C, SPI, GPIO peripherals on BeagleBone Black</li>
-          <li>Integrated U-Boot with custom device-tree overlays for AM335x hardware variants</li>
-          <li>Introduced kernel debug config discipline: CONFIG_DEBUG_INFO, KASAN, lockdep</li>
-          <li>Mentored junior engineers on kernel module development and debugging methodology</li>
+          <li>Implemented custom Bluetooth firmware for sports earbuds on Qualcomm QCC5141: peer-command sync, DAC gain by volume table, manufacturing test commands, app-comms, sound DFU image generation, factory reset, button/UX customisation, auto power-off</li>
+          <li>Implemented system firmware for a sports headset on QCC5126: magnetic-latch attach/detach, battery temperature via NTC, audio prompts &amp; tones, dormant (system sleep), and an accelerometer driver</li>
+          <li>Owned requirements, implementation, unit testing, release builds, and field issue debugging across both programs</li>
         </ul>
       </div>
 
       <div class="exp-item">
         <div class="exp-header">
-          <span class="exp-role">Junior Systems Engineer</span>
-          <span class="exp-period">2016 — 2018</span>
+          <span class="exp-role">Software Engineer</span>
+          <span class="exp-period">Aug 2015 — Jun 2018</span>
         </div>
-        <div class="exp-company">EarlyCompany · Bengaluru, India</div>
+        <div class="exp-company">Global Edge Software Ltd · Client: Qualcomm · India</div>
         <ul class="exp-desc">
-          <li>Ported and validated BSPs for ARM Cortex-A8/A9 targets</li>
-          <li>Wrote shell and Python tooling for automated boot-test farms</li>
-          <li>Contributed to Yocto-based build systems and layer maintenance</li>
+          <li>Implemented Low-Power Mode (LPM) and HCI RAM-dump-in-LPM in Bluetooth firmware to cut idle power on an Android TV host; controller-side packet filtering via VS command / NVM, with crash-time host wake-up and transport resume</li>
+          <li>Developed and validated BSP drivers for the LPC1343 SoC: GPIO, ADC, PWM, UART, SPI, I²C</li>
+          <li>Built an I²C client driver for an AT24C02 EEPROM (cross-toolchain + TFTP boot) — first hands-on Linux device-driver work</li>
         </ul>
       </div>
 
@@ -99,38 +94,37 @@ window.SECTIONS = {
     <div class="skills-grid" id="skills-grid">
 
       <div class="skill-group">
-        <div class="skill-group-title">Kernel &amp; Drivers</div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>Linux Kernel Internals</span><span>95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="95"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>Kernel Driver Dev (char/platform)</span><span>92%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="92"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>kdump / kexec</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>vmcore analysis (crash / gdb)</span><span>88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>Device Tree / DTS</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div></div>
+        <div class="skill-group-title">Firmware &amp; Embedded</div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Embedded C</span><span>95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="95"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Bluetooth FW (Qualcomm QCC / WCN)</span><span>92%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="92"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Device drivers (on/off-chip peripherals)</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>I²C / SPI / UART / GPIO</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Microcontrollers / RTOS (µCOS-II, QNX)</span><span>80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div></div>
       </div>
 
       <div class="skill-group">
-        <div class="skill-group-title">Hardware Platforms</div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>BeagleBone Black / AM335x</span><span>98%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="98"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>ARM Cortex-A8 (ARMv7)</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>x86-64 (host dev)</span><span>80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>Mac Mini M4 (tooling)</span><span>75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="75"></div></div></div>
+        <div class="skill-group-title">Linux &amp; Kernel</div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Linux Kernel Internals</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Kernel Driver Dev (char/platform)</span><span>82%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Device Tree / DTS</span><span>78%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Embedded Linux bring-up</span><span>80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div></div>
       </div>
 
       <div class="skill-group">
-        <div class="skill-group-title">Build &amp; Toolchain</div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>Buildroot</span><span>92%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="92"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>Yocto / OE</span><span>78%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>GCC cross-compilation (ARM32)</span><span>88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>U-Boot / TFTP boot</span><span>83%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="83"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>Makefile / Kconfig</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div></div>
+        <div class="skill-group-title">Platforms &amp; Toolchain</div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Qualcomm QCC51xx / WCN67xx</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>ARM Cortex-A (ARMv7)</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>ARM Cortex-M / MCUs</span><span>82%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>GCC cross-compilation (ARM32)</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div></div>
       </div>
 
       <div class="skill-group">
-        <div class="skill-group-title">Languages &amp; Tools</div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>C (kernel / userspace)</span><span>95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="95"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>Bash / Shell scripting</span><span>88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>Python</span><span>72%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="72"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>GDB / gdb-multiarch</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div></div>
-        <div class="skill-bar-row"><div class="skill-bar-label"><span>Git</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div></div>
+        <div class="skill-group-title">Tools &amp; Debug</div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Lauterbach Trace32</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Git / Perforce</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>GDB</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Bash / Shell scripting</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div></div>
+        <div class="skill-bar-row"><div class="skill-bar-label"><span>Python</span><span>70%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="70"></div></div></div>
       </div>
 
     </div>
@@ -144,83 +138,99 @@ window.SECTIONS = {
 
       <div class="project-card">
         <div class="project-card-header">
-          <span class="project-name">bbb-kdump-pipeline</span>
-          <span class="project-badge">FEATURED</span>
+          <span class="project-name">wcn6750-bt-bringup</span>
+          <span class="project-badge">UPSTREAM</span>
         </div>
         <p class="project-desc">
-          End-to-end kdump implementation for BeagleBone Black. Covers kernel
-          config, U-Boot crashkernel reservation, cross-compiled kexec-tools /
-          makedumpfile (ARM32, static), capture kernel tuning, and vmcore
-          analysis with crash + gdb-multiarch.
+          Brought up the WCN6750 Bluetooth device over UART on a new Qualcomm
+          Linux platform. Built nvmtool to write the BD_ADDR tag into the
+          firmware NVM binary and a systemd service to assign a unique address
+          at boot. Changes upstreamed to the mainline kernel.
         </p>
         <div class="project-tags">
-          <span class="tag">ARM32</span><span class="tag">kdump</span>
-          <span class="tag">kexec</span><span class="tag">makedumpfile</span>
-          <span class="tag">Buildroot</span>
-        </div>
-        <div class="project-links">
-          <a href="#">→ GitHub</a>
-          <a href="#">→ Write-up</a>
+          <span class="tag">Bluetooth</span><span class="tag">UART</span>
+          <span class="tag">Linux</span><span class="tag">systemd</span>
+          <span class="tag">upstream</span>
         </div>
       </div>
 
       <div class="project-card">
         <div class="project-card-header">
-          <span class="project-name">crash-arm32-host</span>
-          <span class="project-badge">TOOL</span>
+          <span class="project-name">bt-uwb-soc-sync</span>
+          <span class="project-badge">HAL</span>
         </div>
         <p class="project-desc">
-          Build system and patches for compiling crash utility v9.0.2 + GDB 16.2
-          targeting ARM vmcore analysis on an x86-64 Ubuntu 24.04 host. Resolves
-          multilib, GMP/MPFR i386, and target=ARM build-chain subtleties.
+          Unified interface giving the Bluetooth and UWB host subsystems
+          synchronised, contention-free access to the SoC — coordinating two
+          HALs over a shared resource.
         </p>
         <div class="project-tags">
-          <span class="tag">crash</span><span class="tag">GDB</span>
-          <span class="tag">ARM</span><span class="tag">vmcore</span>
-          <span class="tag">Ubuntu</span>
-        </div>
-        <div class="project-links">
-          <a href="#">→ GitHub</a>
+          <span class="tag">Bluetooth</span><span class="tag">UWB</span>
+          <span class="tag">HAL</span><span class="tag">SoC</span>
         </div>
       </div>
 
       <div class="project-card">
         <div class="project-card-header">
-          <span class="project-name">am335x-driver-kit</span>
-          <span class="project-badge">DRIVER</span>
+          <span class="project-name">qcc5141-earbuds-fw</span>
+          <span class="project-badge">FIRMWARE</span>
         </div>
         <p class="project-desc">
-          Collection of production-grade Linux kernel drivers for AM335x
-          peripherals: I²C, SPI, PWM, GPIO with interrupt handling, and a
-          custom character device with IOCTL interface. Device-tree bindings
-          included.
+          Custom Bluetooth firmware features for sports earbuds on Qualcomm
+          QCC5141: peer-command sync, DAC gain by volume table, manufacturing
+          test commands, app-comms, sound DFU generation, factory reset,
+          button/UX customisation, and auto power-off.
         </p>
         <div class="project-tags">
-          <span class="tag">kernel</span><span class="tag">I2C</span>
-          <span class="tag">SPI</span><span class="tag">GPIO</span>
-          <span class="tag">DTS</span>
-        </div>
-        <div class="project-links">
-          <a href="#">→ GitHub</a>
+          <span class="tag">QCC5141</span><span class="tag">Bluetooth</span>
+          <span class="tag">DFU</span><span class="tag">audio</span>
         </div>
       </div>
 
       <div class="project-card">
         <div class="project-card-header">
-          <span class="project-name">buildroot-am335x-bsp</span>
+          <span class="project-name">qcc5126-headset-fw</span>
+          <span class="project-badge">FIRMWARE</span>
+        </div>
+        <p class="project-desc">
+          System firmware for a sports headset on QCC5126: magnetic-latch
+          attach/detach, battery temperature via NTC, audio prompts and tones,
+          dormant system sleep, and an accelerometer driver.
+        </p>
+        <div class="project-tags">
+          <span class="tag">QCC5126</span><span class="tag">sensors</span>
+          <span class="tag">accelerometer</span><span class="tag">power</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">bt-lpm-hci-ramdump</span>
+          <span class="project-badge">FIRMWARE</span>
+        </div>
+        <p class="project-desc">
+          Low-Power Mode + HCI RAM-dump-in-LPM for Bluetooth firmware on an
+          Android TV host. Controller-side packet filtering via VS command/NVM,
+          plus crash-time host wake-up and transport resume to cut idle power.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Bluetooth</span><span class="tag">LPM</span>
+          <span class="tag">HCI</span><span class="tag">RAM-dump</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">lpc1343-bsp</span>
           <span class="project-badge">BSP</span>
         </div>
         <p class="project-desc">
-          Minimal but complete Buildroot BSP for BeagleBone Black targeting
-          embedded debug workloads: includes kdump, crash, gdb-multiarch,
-          busybox init, static kexec-tools, and a size-optimised rootfs.
+          BSP drivers for the LPC1343 SoC — GPIO, ADC, PWM, UART, SPI and I²C —
+          developed and unit-tested against on-chip peripherals.
         </p>
         <div class="project-tags">
-          <span class="tag">Buildroot</span><span class="tag">BBB</span>
-          <span class="tag">rootfs</span><span class="tag">kexec-tools</span>
-        </div>
-        <div class="project-links">
-          <a href="#">→ GitHub</a>
+          <span class="tag">LPC1343</span><span class="tag">BSP</span>
+          <span class="tag">ADC</span><span class="tag">PWM</span>
         </div>
       </div>
 
@@ -237,36 +247,10 @@ window.SECTIONS = {
         <span class="blog-date">2026-05-18</span>
         <div class="blog-content">
           <div class="blog-title">Understanding the Linux process lifecycle: fork → execve → ELF → CRT</div>
-          <div class="blog-excerpt">A deep dive into what actually happens from the moment a shell forks until your main() runs — covering copy_process(), do_execve(), ELF loader, and dynamic linker internals.</div>
-          <div class="blog-tags-row"><span class="tag">kernel</span><span class="tag">process</span><span class="tag">ELF</span><span class="tag">ARM32</span></div>
+          <div class="blog-excerpt">A deep dive into what actually happens from the moment a shell forks until your main() runs — covering copy_process(), do_execve(), the ELF loader, and dynamic linker internals.</div>
+          <div class="blog-tags-row"><span class="tag">kernel</span><span class="tag">process</span><span class="tag">ELF</span></div>
           <div class="note-links">
             <a href="viewer.html?file=notes/process-lifecycle.md" target="_blank">→ read note (.md)</a>
-            <a href="notes/process-lifecycle.pdf" target="_blank">→ PDF</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-post">
-        <span class="blog-date">2026-04-02</span>
-        <div class="blog-content">
-          <div class="blog-title">Building crash utility for ARM vmcore analysis on x86-64</div>
-          <div class="blog-excerpt">Step-by-step walkthrough of building crash v9.0.2 + GDB 16.2 with target=ARM on Ubuntu 24.04 — resolving multilib, i386 GMP/MPFR, and GDB configure quirks along the way.</div>
-          <div class="blog-tags-row"><span class="tag">crash</span><span class="tag">vmcore</span><span class="tag">GDB</span></div>
-          <div class="note-links">
-            <a href="viewer.html?file=notes/crash-arm32.md" target="_blank">→ read note (.md)</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-post">
-        <span class="blog-date">2026-02-14</span>
-        <div class="blog-content">
-          <div class="blog-title">End-to-end kdump on BeagleBone Black: the complete guide</div>
-          <div class="blog-excerpt">Everything from kernel config and U-Boot crashkernel= through static kexec-tools cross-compilation, capture kernel pitfalls, and post-panic vmcore extraction.</div>
-          <div class="blog-tags-row"><span class="tag">kdump</span><span class="tag">BBB</span><span class="tag">Buildroot</span><span class="tag">kexec</span></div>
-          <div class="note-links">
-            <a href="viewer.html?file=notes/kdump-pipeline.md" target="_blank">→ read note (.md)</a>
-            <a href="notes/kdump-pipeline.pdf" target="_blank">→ PDF</a>
           </div>
         </div>
       </div>
@@ -275,8 +259,8 @@ window.SECTIONS = {
         <span class="blog-date">2025-12-10</span>
         <div class="blog-content">
           <div class="blog-title">Linux memory management internals for embedded developers</div>
-          <div class="blog-excerpt">Page allocator, slab/slub, vmalloc zones, and CMA on a 512MB Cortex-A8 — with practical crash utility commands to inspect each layer in a live vmcore.</div>
-          <div class="blog-tags-row"><span class="tag">mm</span><span class="tag">slab</span><span class="tag">ARM</span><span class="tag">crash</span></div>
+          <div class="blog-excerpt">The page allocator, slab/slub, and vmalloc zones explained for a memory-constrained ARM target — with practical commands to inspect each layer.</div>
+          <div class="blog-tags-row"><span class="tag">mm</span><span class="tag">slab</span><span class="tag">ARM</span></div>
           <div class="note-links">
             <a href="viewer.html?file=notes/kernel-memory.md" target="_blank">→ read note (.md)</a>
           </div>
@@ -286,8 +270,8 @@ window.SECTIONS = {
       <div class="blog-post">
         <span class="blog-date">2025-10-05</span>
         <div class="blog-content">
-          <div class="blog-title">Magic SysRq demystified: kernel bypass from userspace to hardware</div>
-          <div class="blog-excerpt">How echo c &gt; /proc/sysrq-trigger actually triggers a panic, why it can fail on embedded boards, and when to use physical keyboard bypass instead.</div>
+          <div class="blog-title">Magic SysRq demystified: from userspace trigger to kernel handler</div>
+          <div class="blog-excerpt">How echo c &gt; /proc/sysrq-trigger reaches the kernel, what each SysRq key does, and why it sometimes fails on embedded targets.</div>
           <div class="blog-tags-row"><span class="tag">sysrq</span><span class="tag">kernel</span><span class="tag">debug</span></div>
           <div class="note-links">
             <a href="viewer.html?file=notes/sysrq-notes.md" target="_blank">→ read note (.md)</a>
